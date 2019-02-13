@@ -10,7 +10,8 @@ import {
   Breadcrumb,
   ButtonGroup,
   ButtonToolbar,
-  Card
+  Card,
+  Carousel
 } from "react-bootstrap";
 
 class App extends Component {
@@ -24,6 +25,42 @@ class App extends Component {
           </Breadcrumb.Item>
           <Breadcrumb.Item active>Data</Breadcrumb.Item>
         </Breadcrumb>
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/travel1.jpeg "
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/travel2.png"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/travel3.jpeg"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+        <br />
         <Row>
           <Col>
             <Media>
@@ -117,6 +154,7 @@ class App extends Component {
                   This card has supporting text below as a natural lead-in to
                   additional content.{" "}
                 </Card.Text>
+                <Button variant="success">Belanja</Button>
               </Card.Body>
               <Card.Footer>
                 <small className="text-muted">Last updated 3 mins ago</small>
